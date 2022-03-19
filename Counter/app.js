@@ -8,10 +8,10 @@ const btns = document.querySelectorAll(".btn");
 btns.forEach(function (btn) {
     btn.addEventListener("click", function (e) {
         const style = e.currentTarget.classList;
-        if (style('decrease')) {
+        if (style.contains('decrease')) {
             count--;
         }
-        else if (style('increase')) {
+        else if (style.contains('increase')) {
             count++;
         }
         else {
